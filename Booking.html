@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Order</title>
+
+<style>
+
+hr{
+    
+    width: 150px;
+    margin-left: 0px;
+    border-color: green;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ 
+    text-decoration: none;
+    color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.heading
+{
+color: red;
+font-family: roboto;
+text-align: center;
+
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+.navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  footer 
+  {
+      background-color: #2d2d30 !important;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  
+  .social{
+    background-color: blue;
+    border-radius: 15px;
+    height: 35px;
+    color: white;
+    padding: 15px;
+
+    
+
+ 
+}.fa {
+    padding: 10px;
+    
+   font-weight: bold;
+  color: white    ;
+    text-decoration: none;
+   
+  } 
+  .top{
+  text-shadow: 2px 2px royalblue;
+  color: white;
+  
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+  
+        <i><a class="navbar-brand top" href="#myPage">TECHNOMO</a></i>
+      </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+  
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="Booking.html">ORDER</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="ContactUs.html">CONTACT</a></li>
+          
+              
+            </ul>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br><br>
+<div class = "container">
+<div class = "row">
+<div class ="col-lg-12">
+<center> <img src = "orderimage.jpg" width = 100% > </center>
+</div>
+</div>
+</div>
+
+<h3 class = "heading"> <strong> <em> Buy Your Mobile Now! </em> </strong></h3>
+
+
+<div class = "container">
+ <form action="index.php" > 
+
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control is-invalid" id="validationServer01" placeholder="First name" value="" required>
+     
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer02">Last name</label>
+      <input type="text" class="form-control is-invalid" id="validationServer02" placeholder="Last name" value="" required>
+     
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="validationServer03">Username</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Username" value="" required>
+      
+    </div>
+      <div class="col-md-3 mb-3">
+      <label for="validationServer04"> ID Card No.</label>
+      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="ID Card No." required>
+   
+  </div>  
+
+  <br>
+  <br>
+  <br>
+  <br> 
+
+  
+<div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer044">City</label>
+      <input type="text" class="form-control is-invalid" id="validationServer044" placeholder="City" required>
+     
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer05">State</label>
+      <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="State" required>
+     
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer06">Zip</label>
+      <input type="text" class="form-control is-invalid" id="validationServer06" placeholder="Zip" required>
+     
+    </div>
+  </div>
+  <br>
+  <br>
+   <br> 
+  <br>
+ 
+  
+<div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer07">Country</label>
+      <input type="text" class="form-control is-invalid" id="validationServer07" placeholder="Country" required>
+     
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer08">Address Line 1</label>
+      <input type="text" class="form-control is-invalid" id="validationServer08" placeholder="Address Line 1" required>
+     
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer09"> Address Line 2 (Optional) </label>
+      <input type="text" class="form-control is-invalid" id="validationServer09" placeholder="Address Line 2" required>
+   
+  </div>
+
+  <br>
+  <br>
+   <br>
+    <br>  
+ 
+
+ 
+  
+<div class="form-row">
+
+    <div class="col-md-4 mb-3">
+
+     <label for="validationServer10"> Models  </label>
+      <select class = "custom-select" >
+      <option selected> Choose your Model </option>
+      <option value ="1"> OPPO </option>
+      <option value ="1"> REALME </option>
+    <option value ="1"> HUAWEI </option>
+    <option value ="1"> SAMSUNG </option>
+    <option value ="1"> QMOBILE </option>
+    <option value ="1"> VIVO </option>
+  
+    
+    
+
+     </select>     
+    </div>
+    
+  
+      <div class="col-md-4 mb-3">
+      
+       <label for="validationServer11"> Years </label>
+      <select class = "custom-select" >
+      <option selected> Choose your year </option>
+      
+     <option value ="1"> 2010 </option>
+      <option value ="1"> 2011  </option>
+    <option value ="1"> 2012 </option>
+    <option value ="1"> 2013 </option>
+    <option value ="1"> 2014 </option>
+    <option value ="1"> 2015</option>
+    <option value ="1"> 2016 </option>
+    <option value ="1"> 2017 </option>
+    <option value ="1"> 2018 </option>
+    <option value ="1"> 2019 </option>
+
+
+
+     </select>     
+    </div>
+
+      <div class="col-md-4 mb-3">
+     <label for="validationServer12"> Colors </label>
+      <select class = "custom-select" >
+      <option selected> Choose your Color </option>
+      <option value ="1"> Red </option>
+      <option value ="1"> Blue </option>
+    <option value ="1"> Silver</option>
+    <option value ="1"> Golden </option>
+    <option value ="1"> White</option>
+    <option value ="1">Black</option>
+   
+     </select>     
+   
+  </div>
+ 
+<br><br><br><br> <br>
+ 
+ <div class="form-group">
+ <div class = "text-center">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div>
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  </div>
+  <center> <button class="btn btn-primary" type="submit">Buy Now</button> </center>
+</div>
+</form>
+<br>
+
+
+
+
+</div>
+</div>
+
+<footer class="page-footer font-small teal">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <img src="foot1.jpg" alt="" width="100%" height="100%">
+      </div>
+      <!-- Grid column -->
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold">CONNECT WITH US</h4><br>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook social"></a>
+        <a href="https://twitter.com/explore" target="_blank" class="fa fa-twitter social"></a>
+        <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube social"></a>
+        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram social"></a></div>
+      
+                                       
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+<br>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+   
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+</body>
+</html>
